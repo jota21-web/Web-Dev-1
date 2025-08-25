@@ -1,0 +1,40 @@
+<table border="1">
+<tr>
+    <th>Produto</th>
+    <th>Preço</th>
+    <th>quantidade em estoque</th>
+</tr>
+<tr>
+<td>Pc Gamer</td>
+<td> R$ 4600,00</td>
+<td> 7 </td>
+</tr>
+
+<tr>
+    <td>mouse gamer</td>
+    <td>R$ 350,00</td>
+    <td>52</td>
+</tr>
+<tr>
+    <td>Memória ram</td>
+    <td>R$ 199,99</td>
+    <td>23</td>
+</tr>
+</table>
+
+<h2>Formulario de pedidos</h2>
+<form action="pedido.html"method="post">
+    <label for ="cliente">Nome do cliente:</label><br>
+    <input type ="text" id="cliente" name="cliente" required><br><br>
+
+    <label for="produto">Produto desejado:</label><br>
+    <select id="produto" name="produto">
+        <option value="Pc Gamer">Pc Gamer</option>
+        <option value="mouse gamer">mouse gamer</option>
+        <option value="Memória ram">Memória ram</option>
+    </select><br><br>
+    <label for="quantidade">Quantidade</label><br>
+    <input for="number" id="quantidade" name= "quantidade" min ="1" required><br>
+    <input type="submit" value="Enviar pedido">
+
+</form>
